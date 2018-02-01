@@ -1,3 +1,5 @@
+package Main;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -7,7 +9,7 @@ import javafx.stage.Stage;
 public class Main extends Application{
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/Users/Leo/Documents/OneDrive/simulation-application/src/main/resources/view/MainWindowView.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/view/MainWindowView.fxml"));
         primaryStage.setTitle("simulator");
         primaryStage.setScene(new Scene(root, 600, 500));
         primaryStage.show();
